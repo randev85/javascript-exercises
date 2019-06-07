@@ -34,6 +34,23 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
             //Next player
             nextPlayer();
         }
+        
+        /*
+        if (dice === 6 && lastDice === 6) {
+            //Player looses score
+            scores[activePlayer] = 0;
+            document.querySelector('#score-' + activePlayer).textContent = '0';
+            nextPlayer();
+        } else if (dice !== 1) {
+            //Add score
+            roundScore += dice;
+            document.querySelector('#current-' + activePlayer).textContent = roundScore;
+        } else {
+            //Next player
+            nextPlayer();
+        }
+        lastDice = dice;
+        */
     }    
 });
 
